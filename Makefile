@@ -2,10 +2,8 @@
 dependencies:
 	poetry install
 
-pre-commit-hooks:
-	pre-commit install
 
-development: dependencies pre-commit-hooks
+development: dependencies
 
 # Static analysis
 
