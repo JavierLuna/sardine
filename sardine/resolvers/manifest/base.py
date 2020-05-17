@@ -18,10 +18,6 @@ class BaseManifestResolver(metaclass=ABCMeta):
         raise NotImplementedError
 
     @classmethod
-    def create_dummy_manifest(cls) -> None:
-        cls._save_manifest("")
-
-    @classmethod
     def load_manifest(cls) -> STACK_DECLARATIONS_TYPE:
         global _cached_manifest
         if _cached_manifest is None:

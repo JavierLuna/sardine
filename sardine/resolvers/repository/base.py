@@ -9,7 +9,7 @@ class BaseRepositoryResolver(metaclass=ABCMeta):
 
     @classmethod
     @abstractmethod
-    def download(cls, repository_name: str) -> None:
+    def download(cls, repository_name: str) -> str:
         pass
 
     @classmethod

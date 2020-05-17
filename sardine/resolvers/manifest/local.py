@@ -13,7 +13,7 @@ class LocalManifestResolver(BaseManifestResolver):
 
     @classmethod
     def create_directories(cls) -> None:
-        os.makedirs(SARDINE_RC_PATH.split(os.sep)[:-1], exist_ok=True)
+        os.makedirs(os.sep.join(SARDINE_RC_PATH.split(os.sep)[:-1]), exist_ok=True)
 
     @classmethod
     def _load_manifest(cls) -> str:

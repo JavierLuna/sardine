@@ -32,3 +32,4 @@ class Tokenizer:
             if match:
                 value = match.group(0)
                 return Token(token_type, value)
+        return None

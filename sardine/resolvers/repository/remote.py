@@ -1,6 +1,6 @@
 import os
 
-from git import Repo
+from git import Repo  # type: ignore
 
 from sardine.resolvers.repository.base import BaseRepositoryResolver
 

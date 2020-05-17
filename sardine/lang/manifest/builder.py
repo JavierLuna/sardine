@@ -12,7 +12,7 @@ class StackManifestBuilder:
     def build(cls, declarations: Dict[str, List[Union[RepositoryDeclaration,
                                                       StackDeclaration]]]) -> STACK_DECLARATIONS_TYPE:
         repository_naming_mapping = cls.build_repository_naming_mapping(declarations['repositories'])  # type: ignore
-        resolved_stack_declarations = cls.resolve_aliases(declarations['stacks'],
+        resolved_stack_declarations = cls.resolve_aliases(declarations['stacks'],  # type: ignore
                                                           repository_naming_mapping)  # type: ignore
         return {declaration.alias: declaration for declaration in resolved_stack_declarations}
 
