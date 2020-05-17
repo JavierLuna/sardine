@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sardine"
-version = "0.1.0"
+version = "0.0.0a0"
 description = "Manage your docker-composes as if they were snipets"
 authors = ["Javier Luna molina <javierlunamolina@gmail.com>"]
 license = "MIT"
