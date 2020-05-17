@@ -1,4 +1,3 @@
-import json
 import os
 
 from sardine.config import SARDINE_RC_PATH
