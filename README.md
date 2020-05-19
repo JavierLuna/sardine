@@ -1,20 +1,28 @@
 # Sardine
+![Python versions](https://img.shields.io/badge/Python-3.6+-green.svg) [![PyPI version](https://badge.fury.io/py/sardine.svg)](https://badge.fury.io/py/sardine) [![Documentation Status](https://readthedocs.org/projects/sardine/badge/?version=latest)](https://sardine.readthedocs.io/en/latest/?badge=latest)
 
 Manage your snippet-like docker composes.
+If you swim with dockerized whales, you need to be a sardine!
 
 ## What is sardine?
 
-I make heavy use of docker for really trivial stuff when developing.
-I don't like to install a postgresql database or a mysql one for a specific project,
-so I end up spinning a docker container with that database or component and then remove it once I'm done.
+Sardine is a tool to manage and use docker-compose stacks.
 
-This is clean and really useful, but I have to copy and paste commands every time I want to spin the database I want,
-or create several aliases.
+If you usually use dockerized databases instead of installing them, 
+or have several aliases with `docker run` commands inside, this is your tool!
 
-But what If I want a spark cluster? Then I'll have to mess around docker-compose, and maintain a `docker-compose.yml` file.
+Sardine is simple to use and attempts to be configurable and easy to track on a repository.
 
-What a mess!
+Want a [quick start](https://sardine.readthedocs.io/en/latest/quickstart)?
+Check the [docs](https://sardine.readthedocs.io/en/latest)!
 
-What if I could just do: `sardine run spark` or `sardine run postgres`?
+## Installation
 
-That'd be awesome right? :)
+It is hosted in [PyPi](https://pypi.org/project/sardine), so you can install it via `pipx` or `pip`:
+
+```
+pipx install sardine
+pip install sardine --user
+```
+
+Be sure to check the [requirements](https://sardine.readthedocs.io/en/latest/setup/requirements/) first.
