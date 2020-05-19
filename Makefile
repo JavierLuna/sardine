@@ -1,3 +1,5 @@
+.PHONY: docs
+
 # Development
 dependencies:
 	poetry install
@@ -15,13 +17,15 @@ lint: lint-code
 type-check:
 	poetry run mypy -p sardine
 
+static-analysis: lint type-check
+
 # Docs
 docs:
 	mkdocs serve
 
-# Packaging
 
-build: tests lint
+# Packaging
+build: lint
 	poetry build
 
 publish: build
