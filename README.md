@@ -1,6 +1,6 @@
 # Sardine
 
-Manage your snipet-like docker composes.
+Manage your snippet-like docker composes.
 
 ## What is sardine?
 
