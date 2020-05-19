@@ -1,0 +1,26 @@
+site_name: Sardine
+site_description: Manage your snippet-like docker composes.
+site_author: Javier Luna Molina
+
+repo_url: https://github.com/JavierLuna/sardine
+
+theme: readthedocs
+
+nav:
+  - Home: 'index.md'
+  - Quick start: 'quickstart.md'
+  - Usage: 'usage.md'
+  - Set up:
+      - Requirements: 'setup/requirements.md'
+      - Installation: 'setup/installation.md'
+      - Configuration: 'setup/configuration.md'
+      - The .sardinerc file: 'setup/sardinerc.md'
+  - Sardinelang:
+      - Overview: 'lang/overview.md'
+      - Repositories: 'lang/repositories.md'
+      - Stacks: 'lang/stacks.md'
+      - Grammar: 'lang/grammar.md'
+  - Development:
+      - Creating sardine repos: 'dev/sardine-repositories.md'
+      - Contributing: 'dev/contrib.md'
+  - License: 'license.md'
