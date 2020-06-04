@@ -18,7 +18,7 @@ def main():
     args = parser.parse_args()
 
     command = commands[args.command]
-    command.execute(args.stack, deattached=args.deattached)
+    command.execute(args.stack, deattached=args.detached)
 
 
 if __name__ == '__main__':
