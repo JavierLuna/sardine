@@ -11,7 +11,6 @@ class ExecuteStack(BaseAction):
 
     @classmethod
     def execute(cls, stack_name: str, *args, detached: bool = False, **kwargs):  # type: ignore
-        DownloadRepositories.execute()
         manifest = LocalManifestResolver.load_manifest()
         repository_path = RemoteRepositoryResolver.get_repository_path(manifest[stack_name].repository_name)
         docker_compose_path = os.path.join(repository_path, manifest[stack_name].name, 'docker-compose.yml')
